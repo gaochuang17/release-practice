@@ -1,6 +1,6 @@
 {
   "name": "@chatkit-lab/release-practice",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A tiny package for practicing npm publishing with Changesets",
   "type": "module",
   "main": "./index.cjs",
