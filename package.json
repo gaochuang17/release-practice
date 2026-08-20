@@ -1,0 +1,40 @@
+{
+  "name": "@chatkit-lab/release-practice",
+  "version": "0.0.0",
+  "description": "A tiny package for practicing npm publishing with Changesets",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.cjs",
+    "index.d.ts"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test",
+    "changeset": "changeset",
+    "release": "changeset publish"
+  },
+  "keywords": [
+    "npm",
+    "changesets",
+    "release-practice"
+  ],
+  "author": "ChatKit Lab",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.7"
+  }
+}
